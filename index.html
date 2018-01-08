@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="Virgil4Veterans Landing Page" content="Landing Page">
+  <meta name="Virgil4Veterans Landing Page" content="Landing Page" author="Imran MacMillan">
   <title>Virgil4Veterans</title>
 
 <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
@@ -24,6 +24,7 @@
       <!--[if gt IE 8]><!-->
           <link rel="stylesheet" href="./css/marketing.css">
       <!--<![endif]-->
+      <link rel="icon" type='image/png' href='../images/favicon.png'>
 </head>
   <body>
   <div class="header">
@@ -38,7 +39,7 @@
   </div>
   </div>
 
-  <div class="splash-container">
+  <div class="splash-container" id="hands">
   <div class="splash">
       <h1 class="splash-head">A Helping Hand for Our Nation's Heroes</h1>
       <p class="splash-subhead">
@@ -47,8 +48,27 @@
             Whether you are considering leaving, a proud Veteran, or anywhere along the spectrum - Get Started to Learn More!
       </p>
       <p>
-          <a href="#form" class="pure-button pure-button-primary">Get Started</a>
+          <form class="pure-form pure-g">
+                <div class="pure-u pure-u-md-1-4">
+                  <label id="wtf" for="firstname">First Name</label>
+                  <input type="text" placeholder="First Name" class="pure-input-rounded">
+                </div>
+                <div class="pure-u pure-u-md-1-4">
+                  <label id="wtf" for="lastname">Last Name</label>
+                  <input type="text" placeholder="Last Name" class="pure-input-rounded">
+                </div>
+                <div class="pure-u pure-u-md-1-4">
+                  <label id="wtf" for="email">Email</label>
+                  <input type="email" placeholder="Email" class="pure-input-rounded">
+                </div>
+                <div class="pure-u pure-u-md-1-4">
+                  <br>
+                  <button type="submit" class="pure-button pure-button-primary">Register</button>
+                </div>
+          </form>
       </p>
+      <br>
+      <br>
   </div>
   </div>
 
@@ -63,15 +83,15 @@
                 <form class="pure-form pure-form-stacked">
                     <fieldset>
 
-                        <label for="name">First Name</label>
-                        <input id="name" type="text" placeholder="Your Name">
+                        <label for="firstname2">First Name</label>
+                        <input id="firstname2" type="text" placeholder="First Name">
 
 
-                        <label for="email">Last Name</label>
-                        <input id="email" type="email" placeholder="Your Email">
+                        <label for="lastname2">Last Name</label>
+                        <input id="lastname2" type="text" placeholder="Last Name">
 
-                        <label for="password">Email</label>
-                        <input id="password" type="password" placeholder="Your Password">
+                        <label for="email2">Email</label>
+                        <input id="email2" type="email" placeholder="Email">
 
                         <button type="submit" class="pure-button">Sign Up</button>
                     </fieldset>
@@ -93,20 +113,20 @@
         </div>
     </div>
         <a name="survey"></a>
-    <div class="ribbon l-box-lrg pure-g">
+    <div id="surveybox" class="ribbon l-box-lrg pure-g">
         <div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
-          <a href="https://www.surveymonkey.com/r/BBDMXMS">
-          <img width="300" alt="File Icons" class="pure-img-responsive" src="./images/Survey Feedback.png">
+          <a id="survey1" href="https://www.surveymonkey.com/r/BBDMXMS" target="_blank">
+          <img id="survey1" width="300" alt="File Icons" class="pure-img-responsive" src="./images/Survey Feedback.png">
           </a>
-          <br>
-          <br>
-          <a href="https://www.surveymonkey.com/r/BBDMXMS">
-          <img width="300" alt="File Icons" class="pure-img-responsive" src="./images/Survey Feedback Button Yellow.png">
+          <br id="survey2">
+          <br id="survey2">
+          <a id="survey2" href="https://www.surveymonkey.com/r/BBDMXMS" target="_blank">
+          <img id="survey2" width="300" alt="File Icons" class="pure-img-responsive" src="./images/Survey Feedback Button Yellow.png">
           </a>
-          <br>
-          <br>
-          <a href="https://www.surveymonkey.com/r/BBDMXMS">
-          <img width="300" alt="File Icons" class="pure-img-responsive" src="./images/Survey Feedback.png">
+          <br id="survey3">
+          <br id="survey3">
+          <a id="survey3" href="https://www.surveymonkey.com/r/BBDMXMS" target="_blank">
+          <img id="survey3" width="300" alt="File Icons" class="pure-img-responsive" src="./images/Survey Feedback.png">
         </a>
         </div>
         <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
@@ -125,40 +145,48 @@
       <div class="pure-g">
           <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
 
-              <h3 class="content-subhead">
+              <a href="https://www.va.gov/vetsinworkplace/">
+                 <h3 class="content-subhead">
                   <i class="fa fa-user-md"></i>
                   Veterans Employment Toolkit
               </h3>
+            </a>
               <p>
-                  Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+                Veterans bring valuable skills and experience from their military service to your workforce..
               </p>
           </div>
           <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+            <a href="http://www.vetnethq.com/">
               <h3 class="content-subhead">
                   <i class="fa fa-plus-square"></i>
                   VetNet
               </h3>
+              </a>
               <p>
-                  Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+                    Transitioning from military to civilian life presents unique challenges. To make things easier and provide structure, a few of the..
               </p>
           </div>
           <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+            <a href="https://www.sba.gov/offices/headquarters/ovbd/resources/160511">
               <h3 class="content-subhead">
                   <i class="fa fa-clipboard"></i>
                   Boots to Business
               </h3>
+            </a>
               <p>
-                  Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+              2-step entrepreneurial training program offered by the US Small Business Administration as a training track within the DoD's Transition Assistance Program.
               </p>
           </div>
           <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+            <a href="http://vwise.vets.syr.edu/">
               <h3 class="content-subhead">
                   <i class="fa fa-globe"></i>
-                  Women Veteran Entrepreneurship Training Program
+                  V-Wise
               </h3>
+            </a>
               <p>
-                  Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
-              </p>
+                Veteran Women Igniting the Spirit of Entrepreneurship (V-WISE) is a premier training program in entrepreneurship and small business management..
+                </p>
           </div>
       </div>
   </div>

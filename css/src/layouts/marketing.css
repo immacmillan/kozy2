@@ -58,15 +58,6 @@ label {
     font-size: 100%;
 }
 
-.pure-u-md-1-4{
-  padding-right: 5px;
-}
-
-#wtf {
-  color: #ffffff !important;
-  font-weight: 175;
-}
-
 .pure-form input[type] {
     border: 2px solid #ddd;
     box-shadow: none;
@@ -105,7 +96,7 @@ a.pure-button-primary {
     box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
 }
 .home-menu {
-    background: #101C58;
+    background: #2d3e50;
 }
 .pure-menu.pure-menu-fixed {
     /* Fixed menus normally have a border at the bottom. */
@@ -126,7 +117,7 @@ a.pure-button-primary {
 }
 
 .home-menu a {
-    color: #ffffff;
+    color: #101C58;
 }
 .home-menu li a:hover,
 .home-menu li a:focus {
@@ -144,32 +135,25 @@ a.pure-button-primary {
 .splash-container {
     background: #541082;
     z-index: 1;
-    overflow: scroll;
+    overflow: auto;
     font-family: Lucida;
     /* The following styles are required for the "scroll-over" effect */
     width: 100%;
-    height: 88%;
+    height: 75%;
     top: 0;
     left: 0;
     position: fixed !important;
-}
-
+}.
 
 .splash {
     /* absolute center .splash within .splash-container */
     width: 80%;
     height: 50%;
     margin: auto;
-    position: absolute;
-    top: -180px; left: 0; bottom: 0; right: 0;
+    position: fixed;
+    top: 100px; left: 0; bottom: 0; right: 0;
     text-align: center;
     text-transform: capitalize;
-}
-
-#hands {
-  background-image: url("../images/silhouette hands2.png");
-  background-size: cover;
-  background-position: center;
 }
 
 /* This is the main heading that appears on the blue section */
@@ -247,27 +231,8 @@ a.pure-button-primary {
     background: #584e63;
     color: gray;
     position: fixed;
-    height: 25px !important;
     bottom: 0;
     width: 100%;
-    margin: 0;
-    padding: 0;
-}
-/* Smaller Screens change survey format */
-@media screen and (max-width: 767px) {
-  body {}
-    .survey2 {
-      display: none;
-    }
-    #survey2 {
-      display: none;
-    }
-    .survey3 {
-      display: none;
-    }
-    #survey3 {
-      display: none;
-      }
 }
 
 /*
@@ -300,7 +265,7 @@ a.pure-button-primary {
     to work with */
     .splash {
         width: 50%;
-        height: 40%;
+        height: 50%;
     }
 
     .splash-head {
@@ -326,6 +291,3 @@ a.pure-button-primary {
         font-size: 300%;
     }
 }
-@media (min-width: 400px) {
-
-  }
