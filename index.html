@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="Virgil4Veterans Landing Page" content="Landing Page">
   <title>Virgil4Veterans</title>
 
@@ -51,24 +52,24 @@
       </p>
       <p>
       <div ng-app="root" ng-controller="formCntrl">
-          <form class="pure-form pure-g">
+          <form id="myForm" action="" method="post" class="pure-form pure-g">
                 <div class="pure-u pure-u-md-1-4">
                   <label id="wtf" for="firstname">First Name</label>
-                  <input type="text" ng-model="firstnameone" placeholder="First Name" class="pure-input-rounded">
+                  <input type="text" ng-model="firstnameone" value= "" name="firstnameone" id="firstnameone" placeholder="First Name" class="pure-input-rounded">
                 </div>
                 <div class="pure-u pure-u-md-1-4">
                   <label id="wtf" for="lastname">Last Name</label>
-                  <input type="text" ng-model="lastnameone" placeholder="Last Name" class="pure-input-rounded">
+                  <input type="text" ng-model="lastnameone" value= "" name="lastnameone" id="lastnameone" placeholder="Last Name" class="pure-input-rounded">
                 </div>
                 <div class="pure-u pure-u-md-1-4">
                   <label id="wtf" for="email">Email</label>
-                  <input type="email" ng-model="emailone.text" class="pure-input-rounded">
+                  <input type="email" ng-model="emailone.text" value= "" name="emailone" id="emailone" class="pure-input-rounded">
                 </div>
                 <div class="pure-u pure-u-md-1-4">
                   <br>
-                  <button type="submit" ng-click="submitone()" class="pure-button pure-button-primary">Register</button>
+                  <button type="button" ng-click="submitone()" value="Submit" id="sub" name="sub" class="pure-button pure-button-primary">Register</button>
                 </div>
-               First Name:{{firstnameone}}<br>Last Name: {{lastnameone}}<br>Email:{{emailone.text}}
+          First Name:{{firstnameone}}  
           </form>
         </div>
       </p>
